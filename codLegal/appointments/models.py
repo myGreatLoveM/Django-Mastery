@@ -9,11 +9,17 @@ class PracticeArea(models.Model):
     )
     description = models.TextField()
 
+
     class Meta:
+        verbose_name = "Practice Area"
+        verbose_name_plural = "Practice Areas"
+        db_table = "appointments__practice_areas"
         constraints = [
             models.UniqueConstraint(name="pa_name_unq", fields=("name", ))
         ]
 
+    def __str__(self):
+        return f"{self.name}"
 
 
 
