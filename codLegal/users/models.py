@@ -3,4 +3,6 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    pass
+    dob = models.DateField(null=True, verbose_name='Date of birth')
+
+    REQUIRED_FIELDS = ["email", "dob"]
