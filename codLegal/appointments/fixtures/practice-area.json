@@ -1,0 +1,18 @@
+[
+  {
+    "model": "appointments.PracticeArea",
+    "pk": "2",
+    "fields": {
+        "name": "Test Law 2",
+        "description": "test description 2"
+    }
+  },
+  {
+    "model": "appointments.PracticeArea",
+    "pk": "3",
+    "fields": {
+        "name": "Test Law 3",
+        "description": "test description 3"
+    }
+  }
+]
